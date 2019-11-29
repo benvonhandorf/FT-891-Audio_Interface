@@ -7,4 +7,7 @@ A small project to allow easy interface of a Yaesu FT-891 to a cellphone headset
 
 Possible additional filtering on the input and output paths inspired by [W2AEW's D-104 microphone preamp](https://www.qsl.net/w2aew/myd104amp.html) and possible additional work based on [KR6ZY's station audio interface](https://github.com/SmittyHalibut/station-console).
 
+
+Relies upon my [various KiCAD libraries](https://github.com/benvonhandorf/kicad-library).
+
 73 de AB4EN - Ben
