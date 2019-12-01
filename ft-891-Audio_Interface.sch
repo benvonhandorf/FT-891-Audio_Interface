@@ -221,7 +221,7 @@ F 3 "~" H 4950 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 2350 4600 2350
+	6600 4350 6800 4350
 $Comp
 L Device:C C2
 U 1 1 5DEB67EC
@@ -272,10 +272,7 @@ $EndComp
 Wire Wire Line
 	1800 5950 1650 5950
 Wire Wire Line
-	4400 2150 4600 2150
-Wire Wire Line
-	4600 2150 4600 2350
-Connection ~ 4600 2350
+	6600 4150 6800 4150
 Wire Wire Line
 	4600 2350 4950 2350
 $Comp
@@ -386,9 +383,9 @@ Text GLabel 2300 2300 2    50   Input ~ 0
 PTT
 Text GLabel 2300 2100 2    50   Input ~ 0
 Mic
-Text GLabel 5350 5600 0    50   Input ~ 0
+Text GLabel 6950 4450 0    50   Input ~ 0
 Audio_In_L
-Text GLabel 5350 5800 0    50   Input ~ 0
+Text GLabel 6950 4550 0    50   Input ~ 0
 Audio_In_R
 Text GLabel 6000 5550 2    50   Input ~ 0
 Av_Out_L
@@ -398,9 +395,9 @@ Text GLabel 6000 5750 2    50   Input ~ 0
 Av_Out_R
 Text GLabel 6000 5850 2    50   Input ~ 0
 Headset_Out_R
-Text GLabel 4400 2150 0    50   Input ~ 0
+Text GLabel 6600 4150 0    50   Input ~ 0
 Av_Mic
-Text GLabel 4400 2350 0    50   Input ~ 0
+Text GLabel 6600 4350 0    50   Input ~ 0
 Headset_Mic
 Text GLabel 6500 2500 2    50   Input ~ 0
 Mic
@@ -413,4 +410,58 @@ Wire Wire Line
 	1650 5650 1650 5950
 Text Notes 10650 7650 0    50   ~ 0
 2019-11-18
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J7
+U 1 1 5DF1ABE0
+P 7150 4450
+F 0 "J7" H 7200 4767 50  0000 C CNN
+F 1 "Audio Breakout" H 7200 4676 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 7150 4450 50  0001 C CNN
+F 3 "~" H 7150 4450 50  0001 C CNN
+	1    7150 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 4350 2    50   Input ~ 0
+Mic_In
+Text GLabel 7450 4450 2    50   Input ~ 0
+Audio_Out_L
+Text GLabel 7450 4550 2    50   Input ~ 0
+Audio_Out_R
+Text GLabel 5350 5600 0    50   Input ~ 0
+Audio_Out_L
+Text GLabel 5350 5800 0    50   Input ~ 0
+Audio_Out_R
+Wire Wire Line
+	6800 4150 6800 4350
+Wire Wire Line
+	6800 4350 6950 4350
+Connection ~ 6800 4350
+Text GLabel 4600 2350 0    50   Input ~ 0
+Mic_In
+$Comp
+L power:GND #PWR0101
+U 1 1 5DF2A88A
+P 7700 4650
+F 0 "#PWR0101" H 7700 4400 50  0001 C CNN
+F 1 "GND" H 7705 4477 50  0000 C CNN
+F 2 "" H 7700 4650 50  0001 C CNN
+F 3 "" H 7700 4650 50  0001 C CNN
+	1    7700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4650 7700 4650
+$Comp
+L power:+5V #PWR0102
+U 1 1 5DF2B794
+P 6300 4650
+F 0 "#PWR0102" H 6300 4500 50  0001 C CNN
+F 1 "+5V" H 6315 4823 50  0000 C CNN
+F 2 "" H 6300 4650 50  0001 C CNN
+F 3 "" H 6300 4650 50  0001 C CNN
+	1    6300 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4650 6950 4650
 $EndSCHEMATC
