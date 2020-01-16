@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:RJ45_Shielded J1
-U 1 1 5DE76DAC
-P 1900 2200
-F 0 "J1" H 1957 2867 50  0000 C CNN
-F 1 "Mic Cable" H 1957 2776 50  0000 C CNN
-F 2 "BVH_Connectors_Misc:Molex_0855055002_RJ-45_Jack_Shielded_Yaesu_Numbering" V 1900 2225 50  0001 C CNN
-F 3 "~" V 1900 2225 50  0001 C CNN
-	1    1900 2200
-	1    0    0    -1  
-$EndComp
-$Comp
 L BVH_Connectors_Misc:AudioJack4_SwitchTR J2
 U 1 1 5DE77EAF
 P 1950 3300
@@ -88,9 +77,6 @@ Wire Wire Line
 	2300 2400 2700 2400
 Wire Wire Line
 	2700 2400 2700 2200
-Connection ~ 2700 2200
-Wire Wire Line
-	2700 2200 2300 2200
 $Comp
 L power:+5V #PWR04
 U 1 1 5DE7D735
@@ -381,7 +367,7 @@ Text GLabel 2150 3200 2    50   Input ~ 0
 Audio_In_Gnd
 Text GLabel 2300 2300 2    50   Input ~ 0
 PTT
-Text GLabel 2300 2100 2    50   Input ~ 0
+Text GLabel 2300 2200 2    50   Input ~ 0
 Mic
 Text GLabel 6950 4450 0    50   Input ~ 0
 Audio_In_L
@@ -464,4 +450,20 @@ F 3 "" H 6300 4650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6300 4650 6950 4650
+$Comp
+L Connector:RJ45_Shielded J1
+U 1 1 5DE76DAC
+P 1900 2200
+F 0 "J1" H 1957 2867 50  0000 C CNN
+F 1 "Mic Cable" H 1957 2776 50  0000 C CNN
+F 2 "BVH_Connectors_Misc:Molex_0855055002_RJ-45_Jack_Shielded_Yaesu_Numbering" V 1900 2225 50  0001 C CNN
+F 3 "~" V 1900 2225 50  0001 C CNN
+	1    1900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2200 2700 2100
+Wire Wire Line
+	2700 2100 2300 2100
+Connection ~ 2700 2200
 $EndSCHEMATC
