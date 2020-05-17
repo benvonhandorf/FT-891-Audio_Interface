@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ft-891-Audio_Interface-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -182,7 +181,6 @@ Wire Wire Line
 Wire Wire Line
 	1650 5650 1800 5650
 Connection ~ 1650 5650
-NoConn ~ 9600 4700
 NoConn ~ 9600 4800
 $Comp
 L power:+5V #PWR06
@@ -351,7 +349,7 @@ Text GLabel 9600 3700 0    50   Input ~ 0
 Headset_Gnd
 Text GLabel 9600 3800 0    50   Input ~ 0
 Headset_Mic
-Text GLabel 9600 4500 0    50   Input ~ 0
+Text GLabel 9450 4500 0    50   Input ~ 0
 PTT
 Text GLabel 1800 5500 2    50   Input ~ 0
 Audio_In_Gnd
@@ -466,4 +464,13 @@ Wire Wire Line
 Wire Wire Line
 	2700 2100 2300 2100
 Connection ~ 2700 2200
+Wire Wire Line
+	9450 4500 9500 4500
+Wire Wire Line
+	9500 4500 9500 4700
+Wire Wire Line
+	9500 4700 9600 4700
+Connection ~ 9500 4500
+Wire Wire Line
+	9500 4500 9600 4500
 $EndSCHEMATC
